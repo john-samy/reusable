@@ -10,7 +10,7 @@ jobs:
     docker:
       - image: circleci/node:13.8.0
     steps:
-      - print_pipeline_ids
+      - run: exit 1
       - run:
           name: on error
           command: echo "ERRROR!!!!"
